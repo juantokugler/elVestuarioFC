@@ -176,6 +176,9 @@ footer img{
     
     text-decoration: none ;
 }
+.footer-texto p{
+    background-color:rgb(196, 66, 6) ;
+}
 
 
 .container_cajas{
