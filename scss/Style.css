@@ -1,0 +1,364 @@
+/*body {
+    background-color: $primary-color;
+    color: $color-texto;
+
+        header{
+            background-color: $color-fondo;
+
+                h1{
+                    color: $color-texto;
+                    padding: $padding-general;
+            }
+            nav{
+                ul{
+                    list-style:none ;
+                    display: flex;
+                    justify-content: space-around;
+
+                    li{
+                        a{
+                            text-decoration: none;
+
+                            p{
+                                text-decoration: none;
+                                color: $color-texto;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+}
+
+
+
+
+%boton-base{
+    padding: $espaciado;
+    border: none;
+    border-radius: 5px;
+    color: $color-texto;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+
+
+@mixin sombra($color, $tamanio) {
+    box-shadow: 0 0 $tamanio $color;
+}
+
+.titulo{
+    font-size: 32px;
+    color: $color-terciario;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    @extend %boton-base;
+    background-color: $color-terciario;
+    @include sombra(green, 10px )
+}
+
+.btn-secondary{
+    @extend %boton-base;
+    background-color: $color-secundario;
+    @include sombra(red, 10px )
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Coiny", system-ui;
+  color: white;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(14, 32, 58);
+  padding: 20px;
+  color: white;
+}
+
+header div {
+  background-color: rgb(14, 32, 58);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header div img {
+  height: 10rem;
+}
+header nav {
+  background-color: rgb(235, 80, 8);
+  height: 3rem;
+}
+header nav .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 100%;
+}
+header nav .menu li {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav .menu li a {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  height: 10rem;
+  margin-top: 3%;
+  background-color: rgb(235, 80, 8);
+  justify-content: center;
+  align-items: center;
+}
+footer .wpp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3rem;
+  height: 3rem;
+  width: 3rem;
+}
+footer .caja-footer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+footer .caja-footer .texto-footer {
+  cursor: pointer;
+  margin-top: 3.5%;
+}
+
+body {
+  background-color: rgb(14, 32, 58);
+}
+
+main {
+  background-color: rgb(14, 32, 58);
+}
+main .carrousel {
+  height: 25rem;
+  background-color: aqua;
+}
+main .carrousel img {
+  height: 25rem;
+  background-color: aqua;
+}
+main .div-h2 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 4%;
+}
+main .div-h2 h2 {
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  width: 15%;
+  background-color: rgb(235, 80, 8);
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
+}
+main .main-index .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .main-index .cards .cards-box {
+  margin-bottom: 5%;
+  height: 30rem;
+  width: 25rem;
+  transition: 0.5s;
+  box-shadow: 10px 20px 20px black;
+}
+main .main-index .cards .cards-box:hover {
+  transform: scale(1.1);
+}
+main .main-index .cards .cards-box .card-img {
+  width: 100%;
+  height: 100%;
+}
+main .main-index .cards .cards-box .card-img img {
+  width: 100%;
+  height: 100%;
+}
+main .main-index .cards .cards-box .card-texto {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(235, 80, 8);
+}
+main .main-index .container_cajas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .main-index .container_cajas .caja {
+  margin-top: 3%;
+  width: 19rem;
+  height: 10rem;
+}
+main .main-index .container_cajas .caja i {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 3rem;
+  margin-bottom: 5%;
+}
+main .main-index .container_cajas .caja h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+main .main-index .container_cajas .caja p {
+  padding-left: 10%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-registro {
+  display: flex;
+  background-color: rgb(14, 32, 58);
+  height: 45rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: rgb(196, 66, 6);
+}
+
+.formulario {
+  background-color: rgb(196, 66, 6);
+  box-shadow: 0.3rem 1rem 2rem rgb(0, 0, 0);
+  height: 23rem;
+  width: 25rem;
+  transition: 0.8s;
+}
+
+.formulario:hover {
+  transform: scale(1.1);
+}
+
+.formulario h1 {
+  background-color: rgb(196, 66, 6);
+  font-size: 2.4rem;
+  text-align: center;
+  padding: 5% 0 5% 0;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.formulario form {
+  background-color: rgb(196, 66, 6);
+  padding: 7% 5%;
+  align-items: center;
+}
+
+form .username {
+  background-color: rgb(196, 66, 6);
+  position: relative;
+  border-bottom: 3px solid rgb(255, 255, 255);
+  border-left: 3px solid rgb(255, 255, 255);
+  margin-bottom: 10%;
+}
+
+.username input {
+  background-color: rgb(196, 66, 6);
+  margin-left: 1%;
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  transition: 0.4s;
+}
+
+.username label {
+  background-color: rgb(196, 66, 6);
+  background: none;
+  position: absolute;
+  top: 2.4rem;
+  left: 5px;
+  color: #adadad;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+
+.username input:focus ~ label,
+.username input:focus ~ label {
+  border: 3px solid rgb(14, 32, 58);
+  background-color: rgb(14, 32, 58);
+  top: 2.5rem;
+  color: white;
+}
+
+.username input:focus,
+.username input:focus {
+  border-top: 3px solid rgb(255, 255, 255);
+  border-right: 3px solid rgb(255, 255, 255);
+}
+
+.recordar {
+  cursor: pointer;
+  margin: 5% 0 5% 5%;
+  background-color: rgb(196, 66, 6);
+}
+
+.recordar:hover {
+  background-color: rgb(196, 66, 6);
+  text-decoration: underline;
+}
+
+input[type=submit] {
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 5%;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+  background-color: rgb(14, 32, 58);
+}
+
+input[type=submit]:hover {
+  border: 3px solid white;
+}
+
+.registrate {
+  background-color: rgb(196, 66, 6);
+}
+
+.registrate a {
+  background-color: rgb(196, 66, 6);
+}
+
+.main-sobrenos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
+.caja-sobrenos {
+  background-color: rgb(235, 80, 8);
+  width: 70%;
+  height: 15rem;
+}/*# sourceMappingURL=Style.css.map */

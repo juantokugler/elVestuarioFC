@@ -1,0 +1,86 @@
+@import 'variables';
+body{
+    background-color: $color-principal;
+}
+
+main{
+    .carrousel{
+        height: 25rem;
+        background-color: aqua;
+        img{
+            height: 25rem;
+            background-color: aqua;
+        }
+    }
+    background-color: $color-principal;
+    .div-h2{
+        
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 4%;
+        h2{
+            font-size: 1.7rem;
+            display: flex;
+            justify-content: center;
+            width: 15%;
+            background-color: $color-secundario;
+            border-radius: 25px;
+            box-shadow: 5px 5px 5px black
+        }
+    }
+    .main-index{
+        .cards{
+        @include wrap-cards;
+            .cards-box{
+                margin-bottom: 5%;
+                height: 30rem;
+                width: 25rem;
+                transition: 0.5s;
+                box-shadow:10px 20px 20px black ;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                    .card-img{
+                        width: 100%;   
+                        height: 100%;
+                            img{
+                                width: 100%;   
+                                height: 100%;
+                            }
+                    }
+                    .card-texto{
+                        display: flex;
+                        justify-content: center;
+                        background-color: $color-secundario;
+                    }
+            }
+        }
+        .container_cajas{
+            @include flex;
+            .caja{
+               
+                margin-top: 3%;
+                width: 19rem;
+                height: 10rem;
+                i{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    font-size: 3rem;
+                    margin-bottom: 5%;
+                }
+                h2{
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+                p{
+                    padding-left: 10%;
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

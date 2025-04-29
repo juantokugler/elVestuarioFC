@@ -1,0 +1,13 @@
+@import 'variables';
+.main-sobrenos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+.caja-sobrenos{
+    
+    background-color: $color-secundario;
+    width: 70%;
+    height: 15rem;
+}

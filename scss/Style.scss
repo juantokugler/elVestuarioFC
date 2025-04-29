@@ -1,0 +1,90 @@
+
+
+
+
+//anidacion
+/*body {
+    background-color: $primary-color;
+    color: $color-texto;
+
+        header{
+            background-color: $color-fondo;
+
+                h1{
+                    color: $color-texto;
+                    padding: $padding-general;
+            }
+            nav{
+                ul{
+                    list-style:none ;
+                    display: flex;
+                    justify-content: space-around;
+                    
+                    li{
+                        a{
+                            text-decoration: none;
+
+                            p{
+                                text-decoration: none;
+                                color: $color-texto;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+}
+
+
+
+
+%boton-base{
+    padding: $espaciado;
+    border: none;
+    border-radius: 5px;
+    color: $color-texto;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+
+
+@mixin sombra($color, $tamanio) {
+    box-shadow: 0 0 $tamanio $color;
+}
+
+.titulo{
+    font-size: 32px;
+    color: $color-terciario;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+    @extend %boton-base;
+    background-color: $color-terciario;
+    @include sombra(green, 10px )
+}
+
+.btn-secondary{
+    @extend %boton-base;
+    background-color: $color-secundario;
+    @include sombra(red, 10px )
+}
+*/
+@import 'reset';
+@import 'mixins';
+@import 'variables';
+@import 'header';
+@import 'footer';
+@import 'main';
+@import 'registrate';
+@import 'sobrenos';
+
+

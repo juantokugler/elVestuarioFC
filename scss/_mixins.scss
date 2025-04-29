@@ -1,0 +1,17 @@
+@mixin wrap{
+    display: flex;
+   flex-wrap: wrap;
+  
+}
+
+@mixin flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin wrap-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

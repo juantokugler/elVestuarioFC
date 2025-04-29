@@ -1,0 +1,119 @@
+.main-registro{
+    display: flex;
+    background-color:  rgb(14, 32, 58);
+    height: 45rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form{
+    background-color: rgb(196, 66, 6);
+    
+}
+.formulario{
+    
+    background-color: rgb(196, 66, 6);
+    box-shadow:  0.3rem 1rem 2rem rgb(0, 0, 0);
+    height: 23rem;
+    width: 25rem;
+    transition: 0.8s;
+}
+
+.formulario:hover{
+    transform: scale(1.1);
+}
+
+.formulario h1{
+    background-color: rgb(196, 66, 6);
+    font-size: 2.4rem;
+    text-align: center;
+    padding:  5% 0 5% 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.formulario form{
+    background-color: rgb(196, 66, 6);
+
+    padding: 7% 5%;
+    align-items: center;
+}
+
+form .username{
+    background-color: rgb(196, 66, 6);
+
+    position: relative;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    border-left: 3px solid rgb(255, 255, 255);
+    margin-bottom: 10%;
+   
+}
+
+.username input{
+    background-color: rgb(196, 66, 6);
+    margin-left: 1%;
+    border: none;
+    background: none;
+    outline: none;
+  width: 100%;
+  transition: 0.4s;
+
+}
+.username label{
+    background-color: rgb(196, 66, 6);
+
+    background: none;
+    position: absolute;
+    top: 2.4rem;
+    left: 5px;
+    color: #adadad;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: 0.4s;
+}
+
+
+.username input:focus ~label,
+.username input:focus ~label{
+    border: 3px solid rgb(14, 32, 58);
+    
+    background-color: rgb(14, 32, 58);
+    top: 2.5rem;
+    color: white;
+}
+
+.username input:focus,
+.username input:focus{
+    border-top: 3px solid rgb(255, 255, 255);
+    border-right: 3px solid rgb(255, 255, 255);
+}
+
+.recordar{
+    cursor: pointer;
+    margin: 5% 0 5% 5%;
+    background-color: rgb(196, 66, 6);
+    
+}
+.recordar:hover{
+    background-color: rgb(196, 66, 6);
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: rgb(14, 32, 58) ;
+}
+input[type="submit"]:hover{
+    border: 3px solid white;
+}
+.registrate{
+    background-color: rgb(196, 66, 6);
+}
+.registrate a{
+    background-color: rgb(196, 66, 6);
+}

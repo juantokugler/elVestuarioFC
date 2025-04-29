@@ -1,0 +1,44 @@
+@import 'variables';
+
+.header{
+    @include wrap;
+    background-color: $color-principal;
+    padding: 20px;
+    color: white;
+}
+
+header{
+    div{
+        background-color: $color-principal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            height: 10rem;
+        }
+    }
+
+    nav{
+        background-color: $color-secundario;
+        height: 3rem;
+       .menu{
+        @include flex;
+        list-style: none;
+        height: 100%;
+        
+            li{
+                height: 100%;
+                width: 100%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    text-decoration: none;
+                       
+                }
+            }
+       } 
+    }
+}
+
